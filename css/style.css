@@ -1,0 +1,186 @@
+.logo{
+    font-size: 5rem;
+}
+
+.common-images {
+    max-height: 80vh;
+}
+
+.common-colour {
+    background-color:#0e245d !important;
+}
+
+.common-text{
+    color:#0e245d;
+}
+
+.different-images {
+    max-height: 33vh;
+}
+
+.side-images {
+    max-height: 42vh;
+}
+
+.different-colour {
+    background-color: #fffaf6;
+}
+
+h1 {
+    font-size: 2rem !important;
+}
+
+.room-item {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+@keyframes fade {
+    0% {
+      transform: scale(1, 1);
+      opacity: 0%;
+    }
+  
+    25% {
+      transform: scale(0.7, 0.7);
+      opacity: 25%;
+    }
+  
+    ;
+  
+    50% {
+      transform: scale(0.4, 0.4);
+      opacity: 50%;
+    }
+  
+    ;
+  
+    75% {
+      transform: scale(0.7, 0.7);
+      opacity: 75%;
+    }
+  
+    ;
+  
+    100% {
+      transform: scale(1, 1);
+      opacity: 100%;
+    }
+  
+    ;
+}
+
+@media (min-width: 425px) {
+
+    h1 {
+        font-size: 4rem !important;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .hero {
+        position: relative;
+        color:white;
+    }
+
+    .hero-heading {
+        position: absolute;
+        top: 10rem;
+        left: 9rem;
+        z-index: 2;
+        width:30rem;
+    }
+
+    .hero-form {
+        position: absolute;
+        top: 3rem;
+        left: 40rem;
+        z-index: 1;
+    }
+
+    .form-control{
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-bottom: 1px;
+        width:46rem !important;
+      }
+
+    .comfort {
+        position: relative;
+    }
+
+    .comfort-left-image {
+        position: absolute;
+        top: 0rem;
+        right: 25rem;
+    }
+
+    .comfort-right-image {
+        position: absolute;
+        top: 5rem;
+        right: 7rem;
+    }
+
+    .comfort-middle-image {
+        position: absolute;
+        top: 13rem;
+        right: 20rem;
+    }
+
+    .comfort-para{
+        width:30rem;
+    }
+
+    .rooms {
+        position: relative;
+    }
+
+    .rooms-arrow-left {
+        position: absolute;
+        top: 18rem;
+        right: 50rem;
+    }
+ 
+    .rooms-arrow-right {
+        position: absolute;
+        top: 18rem;
+        right: 2rem;
+    }
+
+    .hello {
+        position: relative;
+    }
+
+    .hello-item {
+        position: absolute;
+        top: 8rem;
+        right: 10rem;
+        width: 30rem;
+    }
+
+    .adress-item{
+        width:35rem;
+    }
+
+    .subscribe {
+        position: relative;
+        color:white;
+    }
+
+    .subscribe-email{
+        margin-left: 18rem;
+    }
+
+    .subscribe-button {
+        position: absolute;
+        top: 6.7rem;
+        right: 18.5rem;
+    }
+
+    .footer-para{
+        width:20rem;
+    }
+
+}

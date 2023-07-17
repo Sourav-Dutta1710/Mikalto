@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikalto</title>
+  <script src="https://kit.fontawesome.com/6dc7929f7c.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslate"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-xl container">
+    <p class="common-text text-center">
+      <span class="logo fw-normal">Mikalto</span><br>
+      Hotels & Resorts
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 py-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">Our Room</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">Page</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex ps-5">
+      <div id="translate"></div>
+      <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping p-2 ms-4"></i></a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Hero Start -->
+  <section name="hero" class="container hero">
+    <img class="img-fluid common-images w-100 d-none d-xxl-block" src="./images/hero-section/cottage.jpg"
+      alt="Ski Resort">
+    <div class="hero-heading fw-bold">
+      <h1 class="fw-normal">Enjoy Your Dream Vacation</h1>
+      Quiet and endlessly beautiful hideaway
+      <div class="d-flex pt-5">
+        <button class="px-5 py-2 d-none d-md-block">About Us</button>
+        <span class="p-3"><a class="nav-link" href="#">View Homestay &rarr;</a></span>
+      </div>
+    </div>
+    <form class="hero-form bg-white text-black py-5 p-lg-5 m-0 m-lg-5">
+      <p><span class="fs-2">Search Room<br></span>Get the latest on our COVID-19 response</p>
+      <div class="d-flex justify-content-between pe-xxl-5 ps-xxl-2 me-xxl-3">
+        <span class="pe-5 common-text"><i class="fa-regular fa-calendar pe-2"></i>Checkin*</span>
+        <span class="ps-5 common-text"><i class="fa-regular fa-calendar pe-2"></i>Checkout*</span>
+      </div>
+      <div class="d-flex pb-4">
+        <input class="form-control w-75" type="text" placeholder="check-in Date" onclick = "(this.type='date')">
+        <input class="form-control w-75" type="text" placeholder="check-out Date" onclick = "(this.type='date')">
+      </div>
+      <label class="common-text"><i class="fa-regular fa-user pe-2"></i>Adults</label>
+      <input class="form-control w-75" type="number">
+      <label class="common-text pt-3"><i class="fa-solid fa-child pe-2"></i>Children</label>
+      <input class="form-control w-75" type="number">
+      <button type="submit" class="btn btn-primary common-colour mt-3 py-2 w-100">Check Availability</button>
+    </form>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Comfort Start -->
+  <section name="comfort" class="comfort container">
+    <p class="mt-5 pt-5 ms-5 ps-5 common-text">Welcome to</p>
+    <h2 class="mx-lg-5 px-lg-5 pb-3 text-black">The Mikalto Luxury &<br> Comfort Homestay</h2>
+    <p class="comfort-para m-lg-5 p-lg-5 mt-0 pt-0 text-secondary">Welcome to our five star hotel inPuerto de la Cruz's
+      old town.
+      A marvelous combination of architecture , design and contemporary art.
+      32 rooms and 10 uniquely different suites ensure our guests' stay
+      is extra special.
+      <img src="./images/comfort-section/signature.png" alt="Signature" class="d-none d-xxl-block"><br>
+      MELINDA AMANDA - HOTEL MANAGER
+    </p>
+    <img src="./images/comfort-section/bed-room.jpg" alt="Bed Room"
+      class="comfort-left-image img-fluid different-images">
+    <img src="./images/comfort-section/dining-space.jpg" alt="Drone View"
+      class="comfort-right-image img-fluid different-images">
+    <img src="./images/comfort-section/drone-view.jpg" alt="Dining Space"
+      class="comfort-middle-image img-fluid different-images">
+  </section>
+  <!-- Comfort End -->
+
+  <!-- Rooms Start -->
+  <section name="rooms" class="rooms common-colour d-flex flex-column flex-lg-row text-white">
+    <div>
+      <p class="mt-5 pt-5 ms-lg-5 ps-5 text-warning">ELEGANCE AND COMFORT</p>
+      <h2 class="mx-lg-5 px-5 pb-3 " id="roomHeading">Standard Room</h2>
+      <p class="comfort-para m-lg-5 p-5 mt-0 pt-0 text-white">From<span class="fw-bold ps-2 fs-5">$150</span> /night<br>
+        with wide and comfortable areas and daylight pouring in from the...
+      </p>
+      <div class="d-flex justify-content-between mx-lg-5 px-5 ">
+        <ul class="list-unstyled">
+          <li>Bed:</li>
+          <li>Capacity:</li>
+          <li>Room Size:</li>
+          <li>View:</li>
+        </ul>
+        <ul class="list-unstyled">
+          <li>Queen Size Bed</li>
+          <li>2 Adults, 1 Children</li>
+          <li>55 sqm</li>
+          <li>garden view</li>
+        </ul>
+      </div>
+      <span class="ps-5 pt-5">
+        <button
+          class="btn btn-transparent px-5 py-2 ms-lg-5 my-5 my-xxl-0 text-white border border-white rounded-0">View
+          Detail</button>
+      </span>
+    </div>
+    <div id="roomImage" class="">
+      <img src="./images/rooms-section/standard-room.jpg" alt="Standard Room" class="img-fluid common-images"></img>
+    </div>
+    <buttton class="btn btn-white rounded-circle bg-white rooms-arrow-left text-black d-none d-xxl-block"
+      onclick="roomChange()"><i class="fa-solid fa-chevron-left"></i></buttton>
+    <buttton class="btn btn-white rounded-circle bg-white rooms-arrow-right text-black d-none d-xxl-block"
+      onclick="roomChange()"><i class="fa-solid fa-chevron-right"></i></buttton>
+  </section>
+  <!-- Rooms End -->
+
+  <!-- Hostel Start -->
+  <h2 class="py-5  p-lg-5 ms-lg-5"><span class="ps-5 fw-normal">Why choose our hostel?</span></h2>
+  <section name="hostel" class="d-flex flex-column flex-lg-row container gap-5 pe-3 pb-5">
+    <div class="d-flex">
+      <span><img src="./images/hostel-section/bell.png" alt="bell"></span>
+      <p class="text-secondary"><span class="fs-5 fw-semibold text-black">Unique cuisine</span><br>
+        We use the best ingredients to make special and really tasty dishes.Choose what you want to eat every day.
+        You order at the moment.</p>
+    </div>
+    <div class="d-flex">
+      <span><img src="./images/hostel-section/yoga.png" alt="yoga"></span>
+      <p class="text-secondary"><span class="fs-5 fw-semibold text-black">Yoga & Gym</span><br>
+        Sauna and Solarium, a fitness corner, bicycles and Mikalto walking poles available.
+        To stay in shape, especially on vacation.</p>
+    </div>
+    <div class="d-flex">
+      <span><img src="./images/hostel-section/location.png" alt="location"></span>
+      <p class="text-secondary"><span class="fs-5 fw-semibold text-black">Perfect Location</span><br>
+        The hotel is located near one of the most beautiful sandy beaches. This is the hotel to book
+        if you plan to spend a great deal of time.</p>
+    </div>
+  </section>
+  <!-- Hostel End -->
+
+  <!-- Activities Start -->
+  <section name="activities" class="common-colour d-flex flex-column flex-lg-row text-white align-items-center">
+    <div class="me-5 mt-5 pt-5">
+      <span class="mt-5 pt-5 ps-5 text-warning">OTHER ACTIVITIES</span>
+      <h2 class="px-5 pb-3 me-3">Give yourself a smile - smile and wellness</h2>
+      <p class="comfort-para mb-5 ps-5 w-100">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusamus voluptate cupiditate animi dolorum
+        esse explicabo, nisi nobis aliquam cumque est, tempora nemo necessitatibus, eligendi autem quisquam enim
+        amet perferendis!
+        <a class="nav-link pt-3" href="#">Explore more &rarr;</a>
+      </p>
+    </div>
+    <img src="./images/activities-section/spa-room.jpg" alt="Standard Room" class="img-fluid common-images w-50">
+  </section>
+  <!-- Activities End -->
+
+  <!-- Nature Start -->
+  <section name="activities" class="common-colour d-flex flex-column flex-lg-row text-white align-items-center">
+    <img src="./images/nature-section/ski-resort.jpg" alt="Standard Room" class="img-fluid common-images w-50">
+    <div class="me-5 mt-5 pt-5">
+      <span class="mt-5 pt-5 ps-5 text-warning">RECONNECT WITH NATURE</span>
+      <h2 class="px-5 pb-3 me-3">Experience a truly unforgettable holiday</h2>
+      <p class="comfort-para mb-5 ps-5 text-white w-100">
+        The wilderness and authenticity of this tiny village nestled between stiff mountain cliffs and miles and miles
+        of beautiful beaches
+        drew foreign visitors like a magnet.</p>
+      <ul class="ps-5 ms-3 text-warning">
+        <li><span class="text-white">Thermal water and ancient baths</span></li>
+        <li><span class="text-white">Turkish Bath</span></li>
+        <li><span class="text-white">Turkish Sauna</span></li>
+        <li><span class="text-white">Relax and therapy message</span></li>
+      </ul>
+      <button class="btn btn-transparent px-5 py-2 mt-4 ms-5 my-5 text-white border border-white rounded-0">Book Your
+        Stay</button>
+    </div>
+  </section>
+  <!-- Nature End -->
+
+  <!-- Experience Start -->
+  <section name="experience" class="py-5">
+    <div class="text-center pt-5">
+      <span class="common-text">EXPERIENCE MATTERS</span>
+      <h2>Esxape from the World see the experience before you<br> feel it.Discover the luxury of Hotel Mikalto</h2>
+    </div>
+    <div class="d-flex flex-column flex-lg-row text-secondary pt-5 gap-5 container">
+      <div class="w-100">
+        <img src="./images/experience-section/front-view.jpg" alt="view" class="img-fluid different-images pb-4">
+        <span class="common-text">WELLNESS</span>
+        <p>
+          <span class="py-4 text-black fw-normal fs-3">Dedicated to wellness</span><br>
+          Aman's approach to wellness is focussed on personalisation, privacy and seclusion.
+          Local spa rituals with indigenous ingredients offer a profoundly therapeutic touch
+          and a gentle sense of discovery
+          <a class="nav-link pt-3" href="#">Discover more &rarr;</a>
+        </p>
+      </div>
+      <div class="w-100">
+        <img src="./images/experience-section/office-room.jpg" alt="Office Room"
+          class="img-fluid different-images pb-4">
+        <span class="common-text">GIFT CARDS</span>
+        <p>
+          <span class="py-4 text-black fw-normal fs-3">The gift of future travel</span><br>
+          Share extraordinary experiences with the Aman E-Gift Card - delivered instantly and
+          offering memories that last a lifetime.
+          <a class="nav-link pt-3" href="#">Discover more &rarr;</a>
+        </p>
+      </div>
+      <div class="w-100">
+        <img src="./images/experience-section/ski-night.jpg" alt="Ski Night" class="img-fluid different-images pb-4">
+        <span class="common-text">MIKALTO SHOP</span>
+        <p>
+          <span class="py-4 text-black fw-normal fs-3">The spa experience from home</span><br>
+          Skincare and spa supplements harness powerful natural ingredients to provide balance
+          and optimal wellbeing.
+          <a class="nav-link pt-3" href="#">Discover more &rarr;</a>
+        </p>
+      </div>
+      <div class="w-100">
+        <img src="./images/experience-section/winter-hotel.jpg" alt="Winter Hotel"
+          class="img-fluid different-images pb-4">
+        <span class="common-text">EXPERIENCE</span>
+        <p>
+          <span class="py-4 text-black fw-normal fs-3">Adventures in the Wild</span><br>
+          Skincare and spa supplements harness powerful natural ingredients to provide balance
+          and optimal wellbeing.
+          <a class="nav-link pt-3" href="#">Discover more &rarr;</a>
+        </p>
+      </div>
+    </div>
+    <p class="text-center">
+      <button class="btn btn-transparent px-5 py-2 common-text border border-primary rounded-0">View all
+        services</button>
+    </p>
+  </section>
+  <!-- Experience End -->
+
+  <!-- Hello Start -->
+  <section name="hello" class="hello py-5">
+    <img class="img-fluid common-images w-100 d-none d-xxl-block" src="./images/hello-section/spa-treatment.jpg"
+      alt="Ski Resort">
+    <div class="hello-item bg-white text-secondary p-5 m-lg-5">
+      <span class="py-5 text-black fw-normal fs-3">Say hello<br> to a whole new you<br></span>
+      <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quasi.
+        Eius, illo nesciunt tenetur iste eaque veritatis, perferendis dolore laudantium non minus modi!
+        Voluptatibus cupiditate est debitis expedita quo dignissimos.</p>
+      <a class="nav-link pt-3" href="#">Discover more &rarr;</a>
+    </div>
+  </section>
+  <!-- Hello End -->
+
+  <!-- Clients Start -->
+  <section name="clients"
+    class="different-colour d-flex flex-column flex-lg-row justify-content-around gap-5 px-5 py-5">
+    <div class="text-secondary px-xl-4">
+      <div class="d-flex">
+        <span><img src="./images/clients-section/model-selena.png" alt="model"></span>
+        <p class="text-secondary"><span class="fs-6 fw-semibold text-black">Selena Mayer</span><br>
+          2021-01-10</p>
+        <span><img src="./images/clients-section/trip-advidor.png" alt="Trip Advisor" class="d-none d-xxl-block"></span>
+      </div>
+      <p class="text-secondary">
+        <img src="./images/clients-section/review.png" alt="review"><br>
+        <span class="fs-6 fw-semibold text-black ps-2">Wondeerful new year trip</span><br>
+        "One of the best hotels I've ever stayed in.The staff are very friendly and helpful, they were so helpful
+        it made me feel bad.It includes use of the Spa,wonderful, it has a...
+      </p>
+    </div>
+    <div class="text-secondary px-xl-0">
+      <div class="d-flex">
+        <span><img src="./images/clients-section/model-esther.png" alt="model"></span>
+        <p class="text-secondary"><span class="fs-6 fw-semibold text-black">Esther Howard</span><br>
+          2021-01-10</p>
+        <span><img src="./images/clients-section/trip-advidor.png" alt="Trip Advisor" class="d-none d-xxl-block"></span>
+      </div>
+      <p class="text-secondary">
+        <img src="./images/clients-section/review.png" alt="review"><br>
+        <span class="fs-6 fw-semibold text-black ps-2">Recommended</span><br>
+        "Great resort, professional staffs".It turns out that you're searching for paradise and you have it hear,
+        nearby.
+        Thanks for the warmth, you are fantastic.
+      </p>
+    </div>
+    <div class="text-secondary px-xl-4">
+      <div class="d-flex">
+        <span><img src="./images/clients-section/model-jane.png" alt="model"></span>
+        <p class="text-secondary"><span class="fs-6 fw-semibold text-black">Jane Cooper</span><br>
+          2021-01-10</p>
+        <span><img src="./images/clients-section/trip-advidor.png" alt="Trip Advisor" class="d-none d-xxl-block"></span>
+      </div>
+      <p class="text-secondary">
+        <img src="./images/clients-section/review.png" alt="review"><br>
+        <span class="fs-6 fw-semibold text-black ps-2">All Good</span><br>
+        "I love the Resort and its enviroment.Mikalto is incredibly dedicated, knowledgable, and helpful.
+        The finished product was beautiful every penny...
+      </p>
+    </div>
+  </section>
+  <!-- Clients End -->
+
+  <!-- Address Start -->
+  <section name="adress" class="d-flex flex-column flex-lg-row container gap-5 py-5">
+    <div class="adress-item px-5">
+      <img src="./images/address-section/flower.png" alt="Flower" class="img-fluid different-images pb-4">
+      <p class="text-secondary"><span class="common-text">GETTING HERE</span><br>
+        <span class="py-4 fw-normal fs-3 text-black">How to get there?</span><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus quis, facilis suscipit, eum, omnis
+        consequuntur eos ad ipsum cupiditate quam ducimus!
+        Laborum cupiditate numquam ipsa doloribus. Quasi, eum at?
+      </p>
+      <div class="d-flex">
+        <span><img src="./images/address-section/plane.png" alt="plane"></span>
+        <p class="text-secondary"><span class="fs-5 fw-semibold text-black">By plane</span><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe ipsum dolore necessitatibus quia,
+          cupiditate fugiat id. Iste non
+        </p>
+      </div>
+      <div class="d-flex">
+        <span><img src="./images/address-section/bus.png" alt="bus"></span>
+        <p class="text-secondary"><span class="fs-5 fw-semibold text-black">By bus</span><br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus tempora laborum beatae, quae consectetur
+          fugiat nemo quibusdam voluptas impedit
+        </p>
+      </div>
+      <div class="d-flex">
+        <span><img src="./images/address-section/van.png" alt="van"></span>
+        <p class="text-secondary ps-3"><span class="fs-5 fw-semibold text-black">By van</span><br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates harum, possimus itaque tenetur sunt esse
+          debitis aliquam blanditiis consectetur,
+        </p>
+      </div>
+      <a class="nav-link pt-3 text-secondary" href="#">Discover more &rarr;</a>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0439020777935!2d88.42883567538762!3d22.57746127948822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a5466e0099%3A0x563fb49fb6394261!2sItobuz%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1689512620752!5m2!1sen!2sin"
+      width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" class="align-self-center d-none d-xxl-block"></iframe>
+  </section>
+  <!-- Address End -->
+
+  <!-- Side Start -->
+  <section name="side" class="different-colour d-flex flex-column flex-lg-row align-items-center gap-3 py-5">
+    <img class="img-fluid side-images" src="./images/side-section/old-style.jpg" alt="Old Style">
+    <div class="d-flex flex-column gap-3">
+      <img class="img-fluid side-images" src="./images/side-section/reception.jpg" alt="Reception">
+      <img class="img-fluid side-images" src="./images/side-section/spa-winter.jpg" alt="Spa">
+    </div>
+    <div class="text-center px-5">
+      <p class="text-secondary"><span class="common-text">SPA & WELLNESS</span><br>
+        <span class="py-4 fw-normal fs-3 text-black">Side by Side with Nature</span><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus quis, facilis suscipit, eum, omnis
+        consequuntur eos ad ipsum cupiditate quam ducimus!
+        Laborum cupiditate numquam ipsa doloribus. Quasi, eum at?
+      </p>
+      <button type="submit" class="btn btn-primary common-colour mt-3 py-2 px-5 rounded-0">Join Us</button>
+    </div>
+  </section>
+  <!-- Side End -->
+
+  <!-- Subscribe Start -->
+  <section name="subscribe" class="subscribe container text-center py-5">
+    <p class="text-secondary"><span class="text-primary">STORIES DELIVERED STRAIGHT</span><br>
+      <span class="py-4 fw-normal fs-3 text-black">Get News & Update to Your Inbox</span><br>
+      <input type="email" class="subscribe-email py-3 form-control border" placeholder="Enter your email address...">
+      <button type="submit"
+        class="btn btn-primary common-colour subscribe-button mt-3 py-2 px-5 rounded-0">Subscribe</button><br>
+    <div class="d-flex justify-content-center">Will be used in accordance with our&nbsp;<a href="#"
+        class="nav-link text-decoration-underline">Privacy Policy</a></div>
+    </p>
+  </section>
+  <!-- Subscribe End -->
+
+  <!-- Footer Start -->
+  <footer class="common-colour">
+    <img src="./images/footer-section/ribbon.png" alt="ribbon" class="img-fluid">
+    <div class="text-white d-flex flex-column flex-lg-row gap-5 justify-content-evenly align-items-center">
+      <div>
+        <h1 class="fw-normal ps-2">
+          Mikalto
+        </h1>
+        <p class="footer-para pb-0 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          accusamus voluptate cupiditate animi dolorum
+          esse explicabo, nisi nobis aliquam cumque est, tempora nemo necessitatibus, eligendi autem quisquam enim
+          amet perferendis!</p>
+        <div class="d-flex">
+          Follow Us:
+          <a class="nav-link px-2 ps-4" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a class="nav-link px-2" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a class="nav-link px-2" href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a class="nav-link px-2" href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a class="nav-link px-2" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a class="nav-link px-2" href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="fw-normal pb-4">About</h3>
+        <ul class="list-unstyled fw-lighter">
+          <li><a class="nav-link active fw-semibold text-decoration-underline" href="#">About Us</a></li>
+          <li><a class="nav-link" href="#">Careers</a></li>
+          <li><a class="nav-link" href="#">Contact US</a></li>
+          <li><a class="nav-link" href="#">Blogs</a></li>
+          <li><a class="nav-link" href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="fw-normal pb-4">Services</h3>
+        <ul class="list-unstyled fw-lighter">
+          <li>Spa</li>
+          <li>Experience</li>
+          <li>Weddings</li>
+          <li>Dinings</li>
+          <li>Event</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="fw-normal pb-4">Quick Links</h3>
+        <ul class="list-unstyled fw-lighter">
+          <li><a class="nav-link" href="#">Facilities</a></li>
+          <li><a class="nav-link" href="#">Accomodation</a></li>
+          <li><a class="nav-link" href="#">Reservation</a></li>
+          <li><a class="nav-link" href="#">Why Choose Us?</a></li>
+          <li><a class="nav-link" href="#">Our Restuarent</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="fw-normal pb-4">Contact Us</h3>
+        <ul class="list-unstyled fw-lighter">
+          <li>Toll Free Customer Support</li>
+          <li>+(123)1500-456-7890</li>
+          <li><br></li>
+          <li>Need Live Support?</li>
+          <li>reservation@mikalto.com</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="text-white container" />
+    <div class="d-flex flex-column flex-lg-row justify-content-lg-between p-4 ps-0 commonText container">
+      <div class="d-lg-flex text-white">
+        Copyright © 2022 mikalto JWS.
+        <a class="nav-link px-2 ps-5" href="#">Privacy</a>
+        <a class="nav-link px-2" href="#">Terms</a>
+        <a class="nav-link px-2" href="#">Sitemap</a>
+      </div>
+  </footer>
+  <!-- Footer End -->
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
