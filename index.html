@@ -14,9 +14,9 @@
 <body>
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-xl container">
-    <p class="common-text text-center">
-      <span class="logo fw-normal">Mikalto</span><br>
-      Hotels & Resorts
+    <p class="common-text text-center d-flex flex-column">
+      <span class="logo fw-normal">Mikalto</span>
+      Hotels & Resorts</p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
 
   <!-- Hero Start -->
   <section name="hero" class="container hero">
-    <img class="img-fluid common-images w-100 d-none d-xxl-block" src="./images/hero-section/cottage.jpg"
+    <img class="img-fluid common-images w-100 d-none d-xxl-block" src="./images/hero-section/cottage-night.jpg"
       alt="Ski Resort">
     <div class="hero-heading fw-bold">
       <h1 class="fw-normal">Enjoy Your Dream Vacation</h1>
@@ -69,13 +69,13 @@
         <span class="ps-5 common-text"><i class="fa-regular fa-calendar pe-2"></i>Checkout*</span>
       </div>
       <div class="d-flex pb-4">
-        <input class="form-control w-75" type="text" placeholder="check-in Date" onclick = "(this.type='date')">
-        <input class="form-control w-75" type="text" placeholder="check-out Date" onclick = "(this.type='date')">
+        <input class="form-control w-100 me-2" type="date" placeholder="check-in Date">
+        <input class="form-control w-100" type="date" placeholder="check-out Date">
       </div>
       <label class="common-text"><i class="fa-regular fa-user pe-2"></i>Adults</label>
-      <input class="form-control w-75" type="number">
+      <input class="form-control w-100" type="number">
       <label class="common-text pt-3"><i class="fa-solid fa-child pe-2"></i>Children</label>
-      <input class="form-control w-75" type="number">
+      <input class="form-control w-100" type="number">
       <button type="submit" class="btn btn-primary common-colour mt-3 py-2 w-100">Check Availability</button>
     </form>
   </section>
@@ -85,7 +85,7 @@
   <section name="comfort" class="comfort container">
     <p class="mt-5 pt-5 ms-5 ps-5 common-text">Welcome to</p>
     <h2 class="mx-lg-5 px-lg-5 pb-3 text-black">The Mikalto Luxury &<br> Comfort Homestay</h2>
-    <p class="comfort-para m-lg-5 p-lg-5 mt-0 pt-0 text-secondary">Welcome to our five star hotel inPuerto de la Cruz's
+    <p class="comfort-para mx-lg-5 p-lg-5 text-secondary">Welcome to our five star hotel inPuerto de la Cruz's
       old town.
       A marvelous combination of architecture , design and contemporary art.
       32 rooms and 10 uniquely different suites ensure our guests' stay
@@ -107,10 +107,10 @@
     <div>
       <p class="mt-5 pt-5 ms-lg-5 ps-5 text-warning">ELEGANCE AND COMFORT</p>
       <h2 class="mx-lg-5 px-5 pb-3 " id="roomHeading">Standard Room</h2>
-      <p class="comfort-para m-lg-5 p-5 mt-0 pt-0 text-white">From<span class="fw-bold ps-2 fs-5">$150</span> /night<br>
+      <p class="comfort-para mx-lg-5 px-5 text-white">From<span class="fw-bold ps-2 fs-5" id="price">$150</span> /night<br>
         with wide and comfortable areas and daylight pouring in from the...
       </p>
-      <div class="d-flex justify-content-between mx-lg-5 px-5 ">
+      <div class="d-flex justify-content-between mx-lg-5 px-5 py-3">
         <ul class="list-unstyled">
           <li>Bed:</li>
           <li>Capacity:</li>
@@ -118,9 +118,9 @@
           <li>View:</li>
         </ul>
         <ul class="list-unstyled">
-          <li>Queen Size Bed</li>
+          <li id="bed">Queen Size Bed</li>
           <li>2 Adults, 1 Children</li>
-          <li>55 sqm</li>
+          <li id="size">55 sqm</li>
           <li>garden view</li>
         </ul>
       </div>
@@ -134,9 +134,9 @@
       <img src="./images/rooms-section/standard-room.jpg" alt="Standard Room" class="img-fluid common-images"></img>
     </div>
     <buttton class="btn btn-white rounded-circle bg-white rooms-arrow-left text-black d-none d-xxl-block"
-      onclick="roomChange()"><i class="fa-solid fa-chevron-left"></i></buttton>
+      onclick="roomChange(0)"><i class="fa-solid fa-chevron-left"></i></buttton>
     <buttton class="btn btn-white rounded-circle bg-white rooms-arrow-right text-black d-none d-xxl-block"
-      onclick="roomChange()"><i class="fa-solid fa-chevron-right"></i></buttton>
+      onclick="roomChange(1)"><i class="fa-solid fa-chevron-right"></i></buttton>
   </section>
   <!-- Rooms End -->
 
@@ -211,8 +211,7 @@
     <div class="d-flex flex-column flex-lg-row text-secondary pt-5 gap-5 container">
       <div class="w-100">
         <img src="./images/experience-section/front-view.jpg" alt="view" class="img-fluid different-images pb-4">
-        <span class="common-text">WELLNESS</span>
-        <p>
+        <p><span class="common-text">WELLNESS</span><br>
           <span class="py-4 text-black fw-normal fs-3">Dedicated to wellness</span><br>
           Aman's approach to wellness is focussed on personalisation, privacy and seclusion.
           Local spa rituals with indigenous ingredients offer a profoundly therapeutic touch
@@ -223,8 +222,7 @@
       <div class="w-100">
         <img src="./images/experience-section/office-room.jpg" alt="Office Room"
           class="img-fluid different-images pb-4">
-        <span class="common-text">GIFT CARDS</span>
-        <p>
+        <p><span class="common-text">GIFT CARDS</span><br>
           <span class="py-4 text-black fw-normal fs-3">The gift of future travel</span><br>
           Share extraordinary experiences with the Aman E-Gift Card - delivered instantly and
           offering memories that last a lifetime.
@@ -233,8 +231,7 @@
       </div>
       <div class="w-100">
         <img src="./images/experience-section/ski-night.jpg" alt="Ski Night" class="img-fluid different-images pb-4">
-        <span class="common-text">MIKALTO SHOP</span>
-        <p>
+        <p><span class="common-text">MIKALTO SHOP</span><br>
           <span class="py-4 text-black fw-normal fs-3">The spa experience from home</span><br>
           Skincare and spa supplements harness powerful natural ingredients to provide balance
           and optimal wellbeing.
@@ -244,8 +241,7 @@
       <div class="w-100">
         <img src="./images/experience-section/winter-hotel.jpg" alt="Winter Hotel"
           class="img-fluid different-images pb-4">
-        <span class="common-text">EXPERIENCE</span>
-        <p>
+          <p><span class="common-text">EXPERIENCE</span><br>
           <span class="py-4 text-black fw-normal fs-3">Adventures in the Wild</span><br>
           Skincare and spa supplements harness powerful natural ingredients to provide balance
           and optimal wellbeing.
@@ -254,8 +250,9 @@
       </div>
     </div>
     <p class="text-center">
-      <button class="btn btn-transparent px-5 py-2 common-text border border-primary rounded-0">View all
-        services</button>
+      <button class="btn btn-transparent px-5 py-2 border border-primary rounded-0">
+        <a href = "./experience.html" target="_blank" class="text-decoration-none common-text">View all
+        services</a></button>
     </p>
   </section>
   <!-- Experience End -->
@@ -384,7 +381,7 @@
 
   <!-- Subscribe Start -->
   <section name="subscribe" class="subscribe container text-center py-5">
-    <p class="text-secondary"><span class="text-primary">STORIES DELIVERED STRAIGHT</span><br>
+    <p class="text-secondary"><span class="common-text">STORIES DELIVERED STRAIGHT</span><br>
       <span class="py-4 fw-normal fs-3 text-black">Get News & Update to Your Inbox</span><br>
       <input type="email" class="subscribe-email py-3 form-control border" placeholder="Enter your email address...">
       <button type="submit"

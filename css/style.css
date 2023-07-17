@@ -1,5 +1,7 @@
-.logo{
+.logo {
     font-size: 5rem;
+    margin-bottom: -2rem;
+    margin-top: -2rem;
 }
 
 .common-images {
@@ -7,11 +9,11 @@
 }
 
 .common-colour {
-    background-color:#0e245d !important;
+    background-color: #0e245d !important;
 }
 
-.common-text{
-    color:#0e245d;
+.common-text {
+    color: #0e245d;
 }
 
 .different-images {
@@ -33,40 +35,45 @@ h1 {
 .room-item {
     animation-name: fade;
     animation-duration: 2s;
-  }
-  
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+    background-color: blue !important;
+}
+
 @keyframes fade {
     0% {
-      transform: scale(1, 1);
-      opacity: 0%;
+        transform: scale(1, 1);
+        opacity: 0%;
     }
-  
+
     25% {
-      transform: scale(0.7, 0.7);
-      opacity: 25%;
+        transform: scale(0.7, 0.7);
+        opacity: 25%;
     }
-  
+
     ;
-  
+
     50% {
-      transform: scale(0.4, 0.4);
-      opacity: 50%;
+        transform: scale(0.4, 0.4);
+        opacity: 50%;
     }
-  
+
     ;
-  
+
     75% {
-      transform: scale(0.7, 0.7);
-      opacity: 75%;
+        transform: scale(0.7, 0.7);
+        opacity: 75%;
     }
-  
+
     ;
-  
+
     100% {
-      transform: scale(1, 1);
-      opacity: 100%;
+        transform: scale(1, 1);
+        opacity: 100%;
     }
-  
+
     ;
 }
 
@@ -81,7 +88,7 @@ h1 {
 
     .hero {
         position: relative;
-        color:white;
+        color: white;
     }
 
     .hero-heading {
@@ -89,7 +96,7 @@ h1 {
         top: 10rem;
         left: 9rem;
         z-index: 2;
-        width:30rem;
+        width: 30rem;
     }
 
     .hero-form {
@@ -99,13 +106,13 @@ h1 {
         z-index: 1;
     }
 
-    .form-control{
+    .form-control {
         border-top: none !important;
         border-left: none !important;
         border-right: none !important;
         border-bottom: 1px;
-        width:46rem !important;
-      }
+        width: 46rem !important;
+    }
 
     .comfort {
         position: relative;
@@ -129,8 +136,8 @@ h1 {
         right: 20rem;
     }
 
-    .comfort-para{
-        width:30rem;
+    .comfort-para {
+        width: 30rem;
     }
 
     .rooms {
@@ -142,7 +149,7 @@ h1 {
         top: 18rem;
         right: 50rem;
     }
- 
+
     .rooms-arrow-right {
         position: absolute;
         top: 18rem;
@@ -160,16 +167,16 @@ h1 {
         width: 30rem;
     }
 
-    .adress-item{
-        width:35rem;
+    .adress-item {
+        width: 35rem;
     }
 
     .subscribe {
         position: relative;
-        color:white;
+        color: white;
     }
 
-    .subscribe-email{
+    .subscribe-email {
         margin-left: 18rem;
     }
 
@@ -179,8 +186,8 @@ h1 {
         right: 18.5rem;
     }
 
-    .footer-para{
-        width:20rem;
+    .footer-para {
+        width: 20rem;
     }
 
 }
